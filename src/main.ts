@@ -16,5 +16,3 @@ tabs.forEach((t, i) => {
         sections[i].hidden = false;
     });
 });
-
-console.log("yooo");
