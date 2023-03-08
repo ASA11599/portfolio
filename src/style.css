@@ -1,0 +1,130 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3, p, .text {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#title {
+    font-size: 5em;
+    font-family: 'Press Start 2P', cursive;
+    color: chartreuse;
+}
+
+.subtitle {
+    color: chartreuse;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#links, #tabs {
+    display: grid;
+}
+
+.link, .tab {
+    grid-column: auto;
+    grid-row: 1;
+    padding: 1em;
+}
+
+#skills.section > div.row {
+    display: flex;
+}
+
+#skills.section > div.row > div.column {
+    flex: 50%;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.section {
+    text-align: left;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none; /* no underline */
+}
+
+.title-icon {
+    margin-right: 1em;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+#app, #content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card {
+    padding: 2em;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid chartreuse; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: chartreuse; }
+}
