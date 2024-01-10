@@ -1,25 +1,25 @@
 {
-  "hosting": {
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
-  "emulators": {
     "hosting": {
-      "port": 5000
+        "public": "dist",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "/",
+                "destination": "/index.html"
+            }
+        ]
     },
-    "ui": {
-      "enabled": false
-    },
-    "singleProjectMode": true
-  }
+    "emulators": {
+        "hosting": {
+            "port": 5000
+        },
+        "ui": {
+            "enabled": false
+        },
+        "singleProjectMode": true
+    }
 }
