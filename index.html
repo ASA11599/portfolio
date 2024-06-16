@@ -13,217 +13,197 @@
 
     <body>
 
-    <div id="app">
+        <div id="app">
 
-        <h1 id="title">Hello World!</h1>
+            <h1 id="title">Hello World!</h1>
 
-        <div class="card typewriter">
-            <h2 class="typewriter">My name is Amayas, I am a Software Engineer</h2>
+            <div class="card typewriter">
+                <h2 class="typewriter">My name is Amayas, I am a Software Engineer</h2>
+            </div>
+
+            <div id="links">
+                <p class="link"><i class="title-icon fab fa-github"></i><a href="https://github.com/ASA11599" target="_blank" rel="noopener noreferrer">ASA11599</a></p>
+                <p class="link"><i class="title-icon fas fa-file-alt"></i><a href="/resume.pdf">Resume</a></p>
+                <p class="link"><i class="title-icon fab fa-linkedin"></i><a href="https://www.linkedin.com/in/asa11599" target="_blank" rel="noopener noreferrer">Amayas Said Amer</a></p>
+                <p class="link"><i class="title-icon fas fa-envelope"></i><a href="mailto:asaid046@uottawa.ca">asaid046@uottawa.ca</a></p>
+            </div>
+
+            <div id="tabs">
+                <h2 class="subtitle tab">>About</h2>
+                <h2 class="subtitle tab">Skills</h2>
+                <h2 class="subtitle tab">Education</h2>
+                <h2 class="subtitle tab">Projects</h2>
+                <h2 class="subtitle tab">Experience</h2>
+            </div>
+
+                <main id="content">
+
+                    <section class="section" id="about">
+                        <p>
+                            I graduated in 2023 with a Bachelor's degree in Software Engineering.<br>
+                            During my studies, I had the opportunity to expand my skills through CO-OP work terms in different fields.<br>
+                        </p>
+                    </section>
+
+                    <section class="section" hidden id="skills">
+                        <div class="row">
+                            <div class="column">
+                                <p>Programming languages</p>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>JavaScript/TypeScript</li>
+                                    <li>Go</li>
+                                    <li>C/C++</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <p>Other languages and protocols</p>
+                                <ul>
+                                    <li>SQL</li>
+                                    <li>HTML</li>
+                                    <li>REST</li>
+                                    <li>GraphQL</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <p>Operating systems</p>
+                                <ul>
+                                    <li>Linux (Ubuntu, RHEL, CentOS)</li>
+                                    <li>Windows</li>
+                                    <li>MacOS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <p>Databases</p>
+                                <ul>
+                                    <li>PostgreSQL</li>
+                                    <li>MariaDB/MySQL</li>
+                                    <li>SQLite</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <p>Tools</p>
+                                <ul>
+                                    <li>Docker</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <p>Cloud</p>
+                                <ul>
+                                    <li>Firebase</li>
+                                    <li>AWS (EC2, S3)</li>
+                                    <li>Google Cloud (Cloud Run)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section" hidden id="education">
+
+                        <h3><strong>University of Ottawa</strong></h3>
+                        <p><strong>BASc in Software Engineering, Engineering Management and Entrepreneurship Option</strong></p>
+                        <p>2023</p>
+
+                        <br>
+
+                        <p>Some of the courses I took: </p>
+                        <ul>
+                            <li>Technical Report Writing</li>
+                            <li>Probability and Statistics for Engineers</li>
+                            <li>Introduction to Software Engineering</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Computer Architecture I</li>
+                            <li>Operating Systems</li>
+                            <li>Databases I</li>
+                            <li>Introduction to Business Management</li>
+                            <li>Design and Analysis of Algorithms I</li>
+                            <li>Software Requirements Analysis</li>
+                            <li>Software Design and Architecture</li>
+                            <li>Financial Accounting</li>
+                            <li>Introduction to Data Communications and Networking</li>
+                            <li>Marketing</li>
+                            <li>Software Project Management</li>
+                        </ul>
+
+                    </section>
+
+                    <section class="section" hidden id="projects">
+
+                        <h3><strong>MapChat</strong></h3>
+                        <p><a href="https://radius-510d3.web.app" target="_blank" rel="noopener noreferrer">Link</a></p>
+                        <p>Technologies: <i>HTML, CSS, JavaScript, Firebase</i></p>
+                        <p>A website that allows anyone to post messages and see messages posted by others near their geographic location.</p>
+                        <br>
+
+                        <h3><strong>E-commerce website</strong></h3>
+                        <p>Technologies: <i>React, Node.js, MongoDB, Docker, Stripe, Google Cloud, GitHub Actions, Jest</i></p>
+                        <p>An online store for a local client that sells antiques and collectibles. Gathered requirements, designed, implemented and tested the software.</p>
+                        <br>
+
+                        <h3><strong>Search engine</strong></h3>
+                        <p><a href="https://github.com/ASA11599/search-engine" target="_blank" rel="noopener noreferrer">Source code</a></p>
+                        <p>Technologies: <i>Go, Python, PostgreSQL, Nginx, Docker</i></p>
+                        <p>A search engine that crawls the web, saves page information and allows simple search queries on page titles.</p>
+                        <br>
+
+                        <h3><strong>Hospital Call Bell</strong></h3>
+                        <p><a href="https://github.com/ASA11599/SVH-CallBell" target="_blank" rel="noopener noreferrer">Source code</a></p>
+                        <p>Technologies: <i>Raspberry Pi, Node.js, SQLite, HTML, JavaScript</i></p>
+                        <p>A call bell system for patients and volunteers at a hospital as a 3-tier web application and a WiFi router running on a Raspberry Pi.</p>
+                        <br>
+
+                        <h3><strong>Digital Clock</strong></h3>
+                        <p><a href="https://github.com/ASA11599/ArduinoDigitalClock" target="_blank" rel="noopener noreferrer">Source code</a></p>
+                        <p>Technologies: <i>C++, Arduino</i></p>
+                        <p>A digital clock built with an Arduino microcontroller, buttons and an LCD screen with time, date, timer and stopwatch features.</p>
+                        <br>
+
+                    </section>
+
+                    <section class="section" hidden id="experience">
+
+                        <h3><i>Software Developer, Mainframe modernization</i></h3>
+                        <p><strong>Alithya & Amazon Web Services</strong></p>
+                        <p>Corrected a modern application to ensure functional equivalence with a legacy mainframe application as part of AWS Mainframe Modernization.</p>
+                        <br>
+
+                        <h3><i>Software Developer, 5G CU (CO-OP)</i></h3>
+                        <p><strong>Dell Technologies</strong></p>
+                        <p>Upgraded the 5G CU test framework from Python 2 to Python 3 while troubleshooting CI issues and documenting the process.</p>
+                        <br>
+        
+                        <h3><i>Software Developer, DNS (CO-OP)</i></h3>
+                        <p><strong>Canadian Internet Registration Authority (CIRA)</strong></p>
+                        <p>Provided visibility into DNS infrastructure performance by building a web portal around a large database for global DNS monitoring.</p>
+                        <br>
+        
+                        <h3><i>Software Developer, Network automation (CO-OP)</i></h3>
+                        <p><strong>Nokia</strong></p>
+                        <p>Improved team productivity by writing automation scripts for common configuration tasks on routers and presented the tools to potential users.</p>
+                        <br>
+        
+                        <h3><i>Software Developer, Web (CO-OP)</i></h3>
+                        <p><strong>Ribbon Communications</strong></p>
+                        <p>Made proposals and implemented new features on a Big Data analytics platform for service providers.</p>
+                        <br>
+
+                        <h3><i>Technical Analyst (CO-OP)</i></h3>
+                        <p><strong>Royal Canadian Mounted Police (RCMP)</strong></p>
+                        <p>Investigated technical issues faced by other employees through calls and support tickets.</p>
+                        <br>
+
+                    </section>
+
+                </main>
+
         </div>
 
-        <div id="links">
-            <p class="link"><i class="title-icon fab fa-github"></i><a href="https://github.com/ASA11599" target="_blank" rel="noopener noreferrer">ASA11599</a></p>
-            <p class="link"><i class="title-icon fas fa-file-alt"></i><a href="/resume.pdf">Resume</a></p>
-            <p class="link"><i class="title-icon fab fa-linkedin"></i><a href="https://www.linkedin.com/in/asa11599" target="_blank" rel="noopener noreferrer">Amayas Said Amer</a></p>
-            <p class="link"><i class="title-icon fas fa-envelope"></i><a href="mailto:asaid046@uottawa.ca">asaid046@uottawa.ca</a></p>
-        </div>
-
-        <div id="tabs">
-            <h2 class="subtitle tab">>About</h2>
-            <h2 class="subtitle tab">Skills</h2>
-            <h2 class="subtitle tab">Education</h2>
-            <h2 class="subtitle tab">Projects</h2>
-            <h2 class="subtitle tab">Experience</h2>
-        </div>
-
-            <main id="content">
-
-                <section class="section" id="about">
-                    <p>
-                        I graduated in 2023 with a Bachelor's degree in Software Engineering.<br>
-                        During my studies, I had the opportunity to expand my skills through CO-OP work terms in different fields.<br>
-                        Some of my interests are distributed systems, databases and marketing.
-                    </p>
-                </section>
-
-                <section class="section" hidden id="skills">
-                    <div class="row">
-                        <div class="column">
-                            <p>Programming languages</p>
-                            <ul>
-                                <li>Python</li>
-                                <li>JavaScript/TypeScript</li>
-                                <li>Go</li>
-                                <li>C/C++</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <p>Other languages and protocols</p>
-                            <ul>
-                                <li>SQL</li>
-                                <li>HTML</li>
-                                <li>REST</li>
-                                <li>GraphQL</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <p>Operating systems</p>
-                            <ul>
-                                <li>Linux (Ubuntu, RHEL, CentOS)</li>
-                                <li>Windows</li>
-                                <li>MacOS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <p>Databases</p>
-                            <ul>
-                                <li>PostgreSQL</li>
-                                <li>MariaDB/MySQL</li>
-                                <li>SQLite</li>
-                                <li>MongoDB</li>
-                                <li>Redis</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <p>Tools</p>
-                            <ul>
-                                <li>Docker</li>
-                                <li>Git</li>
-                                <li>Nginx</li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <p>Frameworks and libraries</p>
-                            <ul>
-                                <li>Vue</li>
-                                <li>React</li>
-                                <li>Angular</li>
-                                <li>Express</li>
-                                <li>Spring</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <p>Cloud</p>
-                            <ul>
-                                <li>Firebase</li>
-                                <li>AWS (EC2)</li>
-                                <li>Google Cloud (Cloud Run)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section" hidden id="education">
-
-                    <h3><strong>University of Ottawa</strong></h3>
-                    <p><strong>BASc in Software Engineering, Engineering Management and Entrepreneurship Option</strong></p>
-                    <p>2023</p>
-
-                    <br>
-
-                    <p>Some of the courses I took: </p>
-                    <ul>
-                        <li>Technical Report Writing</li>
-                        <li>Probability and Statistics for Engineers</li>
-                        <li>Introduction to Software Engineering</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Computer Architecture I</li>
-                        <li>Operating Systems</li>
-                        <li>Databases I</li>
-                        <li>Introduction to Business Management</li>
-                        <li>Design and Analysis of Algorithms I</li>
-                        <li>Software Requirements Analysis</li>
-                        <li>Software Design and Architecture</li>
-                        <li>Financial Accounting</li>
-                        <li>Introduction to Data Communications and Networking</li>
-                        <li>Marketing</li>
-                        <li>Software Project Management</li>
-                    </ul>
-
-                </section>
-
-                <section class="section" hidden id="projects">
-
-                    <h3><strong>Proximity social media</strong></h3>
-                    <p>Technologies: <i>Go, Flutter, Docker, AWS</i></p>
-                    <p>A mobile application and backend that allows users to post messages and see messages posted by other users in their geographic location.</p>
-                    <br>
-
-                    <h3><strong>E-commerce website</strong></h3>
-                    <p>Technologies: <i>React, Node.js, MongoDB, Docker, Stripe, Google Cloud, GitHub Actions, Jest</i></p>
-                    <p>An online store for a local client that sells antiques and collectibles. Gathered requirements, designed, implemented and tested the software.</p>
-                    <br>
-
-                    <h3><strong>Search engine</strong></h3>
-                    <p><a href="https://github.com/ASA11599/search-engine" target="_blank" rel="noopener noreferrer">Source code</a></p>
-                    <p>Technologies: <i>Go, Python, PostgreSQL, Nginx, Docker</i></p>
-                    <p>A search engine that crawls the web, saves page information and allows simple search queries on page titles.</p>
-                    <br>
-
-                    <h3><strong>Hospital Call Bell</strong></h3>
-                    <p><a href="https://github.com/ASA11599/SVH-CallBell" target="_blank" rel="noopener noreferrer">Source code</a></p>
-                    <p>Technologies: <i>Raspberry Pi, Node.js, SQLite, HTML/JS</i></p>
-                    <p>A call bell system for patients and volunteers at a hospital as a 3-tier web application and a WiFi router running on a Raspberry Pi.</p>
-                    <br>
-
-                    <h3><strong>Digital Clock</strong></h3>
-                    <p><a href="https://github.com/ASA11599/ArduinoDigitalClock" target="_blank" rel="noopener noreferrer">Source code</a></p>
-                    <p>Technologies: <i>C++, Arduino</i></p>
-                    <p>A digital clock built with an Arduino microcontroller, buttons and an LCD screen with time, date, timer and stopwatch features.</p>
-                    <br>
-
-                </section>
-
-                <section class="section" hidden id="experience">
-
-                    <h3><i>Software Developer</i></h3>
-                    <p><strong>Alithya & Amazon Web Services</strong></p>
-                    <p>2024</p>
-                    <p>Corrected a modern application to ensure functional equivalence with a legacy mainframe application as part of AWS Mainframe Modernization.</p>
-                    <br>
-
-                    <h3><i>5G gNodeB CU Developer (CO-OP)</i></h3>
-                    <p><strong>Dell Technologies</strong></p>
-                    <p>2022</p>
-                    <p>Upgraded the 5G CU test framework from Python 2 to Python 3 while troubleshooting CI issues and documenting the process.</p>
-                    <br>
-    
-                    <h3><i>Software Developer in Global DNS Analytics (CO-OP)</i></h3>
-                    <p><strong>Canadian Internet Registration Authority (CIRA)</strong></p>
-                    <p>2021</p>
-                    <p>Provided visibility into DNS infrastructure performance by building a web portal around a large database for global DNS monitoring.</p>
-                    <br>
-    
-                    <h3><i>Software and Automation Tools Developer (CO-OP)</i></h3>
-                    <p><strong>Nokia</strong></p>
-                    <p>2020</p>
-                    <p>Improved team productivity by writing automation scripts for common configuration tasks on routers and presented the tools to potential users.</p>
-                    <br>
-    
-                    <h3><i>Software Developer (CO-OP)</i></h3>
-                    <p><strong>Ribbon Communications</strong></p>
-                    <p>2020</p>
-                    <p>Made proposals and implemented new features on a Big Data analytics platform for service providers.</p>
-                    <br>
-
-                    <h3><i>Technical Analyst (CO-OP)</i></h3>
-                    <p><strong>Royal Canadian Mounted Police (RCMP)</strong></p>
-                    <p>2019</p>
-                    <p>Investigated technical issues faced by other employees through calls and support tickets.</p>
-                    <br>
-
-                </section>
-
-            </main>
-
-    </div>
-
-    <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="/src/main.ts"></script>
 
     </body>
 
