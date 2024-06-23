@@ -30,3 +30,6 @@ dist-ssr
 
 # Firebase cache
 .firebase/
+
+# Resume
+public/resume.pdf
