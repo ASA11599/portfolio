@@ -1,7 +1,5 @@
-import "./style.css";
-
-const tabs: NodeListOf<HTMLHeadingElement> = document.querySelectorAll<HTMLHeadingElement>(".tab");
-const sections: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".section");
+export const tabs: NodeListOf<HTMLHeadingElement> = document.querySelectorAll<HTMLHeadingElement>(".tab");
+export const sections: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".section");
 
 tabs.forEach((t, i) => {
 
