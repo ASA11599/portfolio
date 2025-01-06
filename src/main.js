@@ -1,5 +1,5 @@
-export const tabs: NodeListOf<HTMLHeadingElement> = document.querySelectorAll<HTMLHeadingElement>(".tab");
-export const sections: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".section");
+export const tabs = document.querySelectorAll(".tab");
+export const sections = document.querySelectorAll(".section");
 
 tabs.forEach((t, i) => {
 
