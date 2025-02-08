@@ -47,7 +47,7 @@ h3 {
 
 .link, .tab {
     margin: auto;
-    padding: 10%;
+    padding: 1em;
 }
 
 #skills.section > div.row {
@@ -78,6 +78,8 @@ a {
 body {
     min-width: 100%;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -116,4 +118,86 @@ h1 {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: chartreuse; }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+
+    /* General Layout Tweaks */
+    #app, #content {
+        padding: 1rem; /* Reduce padding for mobile */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smaller font for better fitting on mobile */
+    }
+
+    h3 {
+        font-size: 1.3em; /* Slightly smaller h3 */
+    }
+
+    #title {
+        font-size: 3em; /* Smaller title font */
+    }
+
+    .card {
+        padding: 1em; /* Smaller padding for cards */
+    }
+
+    /* Responsive Grid Layout */
+    #links, #tabs {
+        grid-template-columns: 1fr; /* Stack the columns on mobile */
+        grid-auto-flow: row;
+    }
+
+    /* Ensure flex containers adapt for smaller screens */
+    #skills.section > div.row {
+        flex-direction: column; /* Stack the rows vertically */
+    }
+
+    #skills.section > div.row > div.column {
+        flex: 100%; /* Each column should take full width on mobile */
+    }
+
+    /* Adjust links and buttons */
+    .link, .tab {
+        padding: 0.75em; /* Smaller padding for links/tabs */
+        margin: 0.5em; /* Smaller margin to avoid crowding */
+    }
+
+    .section {
+        text-align: center; /* Center-align sections for better readability */
+    }
+
+    /* Make sure title icon doesn't overflow */
+    .title-icon {
+        margin-right: 0.5em; /* Reduced margin for mobile */
+    }
+
+    /* Typewriter effect */
+    .typewriter h2 {
+        font-size: 1.5em; /* Smaller font for typewriter text */
+        letter-spacing: .1em; /* Less spacing for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further Adjustments for Very Small Screens */
+    h1 {
+        font-size: 2em; /* Decrease font size even more */
+    }
+
+    #title {
+        font-size: 2.5em; /* Decrease title size */
+    }
+
+    .link, .tab {
+        padding: 0.5em; /* Even smaller padding */
+        margin: 0.5em; /* Smaller margin for smaller screens */
+    }
+
+    .typewriter h2 {
+        font-size: 1.2em; /* Smaller font for typewriter on small screens */
+    }
 }
