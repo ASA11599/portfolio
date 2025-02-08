@@ -31,6 +31,7 @@ h3 {
     font-size: 5em;
     font-family: 'Press Start 2P', cursive;
     color: chartreuse;
+    width: 100%;
 }
 
 .subtitle {
@@ -40,12 +41,13 @@ h3 {
 
 #links, #tabs {
     display: grid;
+    width: 100%;
+    grid-auto-flow: column;
 }
 
 .link, .tab {
-    grid-column: auto;
-    grid-row: 1;
-    padding: 1em;
+    margin: auto;
+    padding: 10%;
 }
 
 #skills.section > div.row {
@@ -74,10 +76,7 @@ a {
 }
 
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
+    min-width: 100%;
     min-height: 100vh;
 }
 
@@ -87,10 +86,11 @@ h1 {
 }
 
 #app, #content {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    align-items: center;
 }
 
 .card {
@@ -98,12 +98,14 @@ h1 {
 }
 
 .typewriter h2 {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid chartreuse; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end), blink-caret .75s infinite;
 }
 
 @keyframes typing {
