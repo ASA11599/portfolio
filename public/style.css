@@ -71,6 +71,10 @@ a {
     text-decoration: none; /* no underline */
 }
 
+ul > li {
+   text-align: left;
+}
+
 .title-icon {
     margin-right: 1em;
 }
